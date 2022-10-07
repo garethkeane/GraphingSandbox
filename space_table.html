@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dominate</title>
+  </head>
+  <body>
+    <table class="table">
+      <tr>
+        <th class="header" id="header-0-0">Ticker</th>
+        <th class="header" id="header-0-1">Company Name</th>
+        <th class="header" id="header-0-2">Enterprise Value ($M)</th>
+        <th class="header" id="header-0-3">EV/TTM Rev Mult</th>
+        <th class="header" id="header-0-4">EV/2023 Rev Mult</th>
+        <th class="header" id="header-0-5">Rev Growth Rate (%)</th>
+        <th class="header" id="header-0-6">Subsector</th>
+      </tr>
+      <tr class="row" id="row-0">
+        <td class="data" id="data-0-0">ASTS</td>
+        <td class="data" id="data-0-1">AST SpaceMobile Inc.</td>
+        <td class="data" id="data-0-2">428</td>
+        <td class="data" id="data-0-3">23.3</td>
+        <td class="data" id="data-0-4">60.3</td>
+        <td class="data" id="data-0-5">-48.2</td>
+        <td class="data" id="data-0-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-1">
+        <td class="data" id="data-1-0">ARQQ</td>
+        <td class="data" id="data-1-1">Arqit Quantum Inc.</td>
+        <td class="data" id="data-1-2">606</td>
+        <td class="data" id="data-1-3">49.3</td>
+        <td class="data" id="data-1-4">5.3</td>
+        <td class="data" id="data-1-5">281.6</td>
+        <td class="data" id="data-1-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-2">
+        <td class="data" id="data-2-0">JOBY</td>
+        <td class="data" id="data-2-1">Joby Aviation Inc.</td>
+        <td class="data" id="data-2-2">1,456</td>
+        <td class="data" id="data-2-3">None</td>
+        <td class="data" id="data-2-4">0.0</td>
+        <td class="data" id="data-2-5">None</td>
+        <td class="data" id="data-2-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-3">
+        <td class="data" id="data-3-0">LILM</td>
+        <td class="data" id="data-3-1">Lilium N.V.</td>
+        <td class="data" id="data-3-2">382</td>
+        <td class="data" id="data-3-3">None</td>
+        <td class="data" id="data-3-4">0.0</td>
+        <td class="data" id="data-3-5">None</td>
+        <td class="data" id="data-3-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-4">
+        <td class="data" id="data-4-0">PLTR</td>
+        <td class="data" id="data-4-1">Palantir Technologies Inc.</td>
+        <td class="data" id="data-4-2">18,928</td>
+        <td class="data" id="data-4-3">11.5</td>
+        <td class="data" id="data-4-4">8.0</td>
+        <td class="data" id="data-4-5">25.4</td>
+        <td class="data" id="data-4-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-5">
+        <td class="data" id="data-5-0">PL</td>
+        <td class="data" id="data-5-1">Planet Labs PBC</td>
+        <td class="data" id="data-5-2">1,191</td>
+        <td class="data" id="data-5-3">7.6</td>
+        <td class="data" id="data-5-4">4.6</td>
+        <td class="data" id="data-5-5">39.6</td>
+        <td class="data" id="data-5-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-6">
+        <td class="data" id="data-6-0">RKLB</td>
+        <td class="data" id="data-6-1">Rocket Lab USA Inc.</td>
+        <td class="data" id="data-6-2">1,767</td>
+        <td class="data" id="data-6-3">13.7</td>
+        <td class="data" id="data-6-4">5.4</td>
+        <td class="data" id="data-6-5">44.0</td>
+        <td class="data" id="data-6-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-7">
+        <td class="data" id="data-7-0">SPCE</td>
+        <td class="data" id="data-7-1">Virgin Galactic Holdings Inc.</td>
+        <td class="data" id="data-7-2">865</td>
+        <td class="data" id="data-7-3">254.7</td>
+        <td class="data" id="data-7-4">35.7</td>
+        <td class="data" id="data-7-5">2,007.0</td>
+        <td class="data" id="data-7-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+      <tr class="row" id="row-8">
+        <td class="data" id="data-8-0">VORB</td>
+        <td class="data" id="data-8-1">Virgin Orbit Holdings Inc.</td>
+        <td class="data" id="data-8-2">994</td>
+        <td class="data" id="data-8-3">437.4</td>
+        <td class="data" id="data-8-4">3.7</td>
+        <td class="data" id="data-8-5">441.4</td>
+        <td class="data" id="data-8-6">Space, Aerospace &amp; Defense</td>
+      </tr>
+    </table>
+  </body>
+</html>
+<script>const tables = document.getElementsByClassName('table')
+for (const table of tables) {
+    const root = document.getElementById('root')
+    const rows = Array.prototype.slice.call(table.children[0].getElementsByClassName('row'))
+
+    const headers = table.getElementsByClassName('header')
+    for (const header of headers) {
+        header.addEventListener('click', () => {
+            let sort;
+            switch (header.getAttribute('data-sort')) {
+                case 'asc':
+                    sort = 'desc'
+                    header.classList.remove('asc')
+                    header.classList.add('desc')
+                    header.setAttribute('data-sort', 'desc')
+                    break
+                case 'desc':
+                    sort = null
+                    header.classList.remove('asc', 'desc')
+                    header.setAttribute('data-sort', 'null')
+                    break
+                default:
+                    sort = 'asc'
+                    header.classList.add('asc')
+                    header.setAttribute('data-sort', 'asc')
+            }
+            for (const h of headers) {
+                if (h !== header) {
+                    h.setAttribute('data-sort', null)
+                    h.classList.remove('asc', 'desc')
+                }
+            }
+
+            const sortId = +header.id.split('-')[2]
+            const numericRegex = /[,.0-9]*/g
+            const convertToSortable = (str) => (str ?? 'a').match(numericRegex).join('') === str ? str.replaceAll(',', '') : str
+            const numeric = rows.some(row => !isNaN(+convertToSortable(document.getElementById(`data-${row.id.split('-')[1]}-${sortId}`)?.innerText ?? 'a')))
+
+            let output = rows.sort((a, b) => {
+                const aData = document.getElementById(`data-${a.id.split('-')[1]}-${sortId}`)
+                const bData = document.getElementById(`data-${b.id.split('-')[1]}-${sortId}`)
+                if (!aData)
+                    return 1
+                if (!bData)
+                    return -1
+
+                const aText = convertToSortable(aData?.innerText)
+                const bText = convertToSortable(bData?.innerText)
+
+                if (['asc', 'desc'].includes(sort)) {
+                    if (numeric) {
+                        if (isNaN(+(aText ?? 'a')))
+                            return 1
+                        if (isNaN(+(bText ?? 'a')))
+                            return -1
+                        return +aText - +bText
+                    } else
+                        return (aText ?? '').localeCompare(bText ?? '')
+                }
+                else {
+                    const aRowId = +aData.id.split('-')[1]
+                    const aDataId = +aData.id.split('-')[2]
+                    const bRowId = +bData.id.split('-')[1]
+                    const bDataId = +bData.id.split('-')[2]
+                    if (aRowId !== bRowId)
+                        return aRowId - bRowId
+                    else
+                        return aDataId - bDataId
+                }
+            })
+
+            if (sort === 'desc') {
+                output = output.reverse()
+                output.filter(row => document.getElementById(`data-${row.id.split('-')[1]}-${sortId}`)?.innerText === 'None').map(row => {
+                    output.splice(output.indexOf(row), 1)
+                    output.push(row)
+                })
+            }
+
+            for (const row of rows)
+                table.children[0].removeChild(row)
+            for (const row of output)
+                table.children[0].appendChild(row)
+        })
+    }
+
+    const copy = document.getElementById('copy')
+    let copyAllowed = false
+    copy.addEventListener('click', () => {
+        if (copyAllowed)
+            return
+
+        copyAllowed = true
+        root.classList.add('copying')
+    })
+
+    const values = table.getElementsByClassName('data')
+    let copiedTimeoutId = 0
+    for (const value of values) {
+        value.addEventListener('click', async (event) => {
+            if (!copyAllowed)
+                return
+
+            copyAllowed = false
+            root.classList.remove('copying')
+
+            const text = value?.innerText
+            if (!text)
+                return
+
+            await navigator.clipboard.writeText(text)
+
+            const copied = document.getElementById('copied')
+            copied.classList.add('active')
+            copied.style.top = `${event.clientY + window.scrollY}px`
+            copied.style.left = `${event.clientX + window.scrollX}px`
+
+            if (copiedTimeoutId)
+                clearTimeout(copiedTimeoutId)
+            copiedTimeoutId = setTimeout(() => copied.classList.remove('active'), 3000)
+        })
+    }
+}
+</script>
+<style>@charset "UTF-8";
+.table {
+  border: thin solid grey;
+  border-radius: 1rem;
+  overflow: hidden;
+  border-spacing: 0;
+  font-family: "Poppins", sans-serif;
+}
+.table tr {
+  margin: 0;
+  padding: 6px;
+  border: thin solid grey;
+  border-bottom: thin solid grey;
+}
+.table tr:first-of-type {
+  color: #ffffff;
+  background-color: #3954C8;
+  word-wrap:break-word;
+}
+
+.table tr:nth-child(odd):not(:first-of-type) {
+  color: #000000;
+  background-color: #f3f3f3;
+}
+.table tr:nth-child(even) {
+  color: #000000;
+  background-color: #ffffff;
+}
+.table tr th, .table tr td {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: thin solid grey;
+}
+.table tr th {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  min-width: 2rem;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  word-wrap: break-word;
+}
+
+/*.table th {
+  width: 50%;
+}*/
+
+.table tr th[data-sort=asc]::after {
+  content: " (↑)";
+}
+.table tr th[data-sort=desc]::after {
+  content: " (↓)";
+}
+.table tr td:nth-child(3) {
+  text-align: center;
+}
+.table tr td:nth-child(4) {
+  text-align: center;
+}
+.table tr td:nth-child(5) {
+  text-align: center;
+}
+.table tr td:nth-child(6) {
+  text-align: center;
+}
+/*try this*/
+.table tr th:nth-child(6) {
+  text-align:center;
+}
+.table tr th:nth-child(7) {
+  text-align:center;
+}
+
+.table th:nth-child(4) {
+  width: 120px;
+  word-wrap:break-word;
+  text-align:center;
+}
+
+.table th:nth-child(3) {
+  width: 130px;
+  word-wrap:break-word;
+  text-align:center;
+}
+
+.table th:nth-child(5) {
+  width: 120px;
+  word-wrap:break-word;
+  text-align:center;
+}
+
+.table th:nth-child(6) {
+  width: 120px;
+  word-wrap:break-word;
+}
+/*.table tr th:nth-child(3) {
+  word-wrap:break-word;
+  }*/
+
+.table tr td:nth-child(7) {
+  text-align: center;
+}
+.table tr td:nth-child(8) {
+  text-align: center;
+}
+.table tr {
+  padding: 6px;
+  border-bottom: thin solid grey;
+}
+.table tr:hover {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
+</style>
