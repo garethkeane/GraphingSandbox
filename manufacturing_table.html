@@ -1,257 +1,362 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Dominate</title>
-  </head>
-  <body>
-    <table class="table">
-      <tr>
-        <th class="header" id="header-0-0">Ticker</th>
-        <th class="header" id="header-0-1">Company Name</th>
-        <th class="header" id="header-0-2">Market Cap ($M)</th>
-        <th class="header" id="header-0-3">EV/TTM Rev Mult</th>
-        <th class="header" id="header-0-4">EV/2023 Rev Mult</th>
-        <th class="header" id="header-0-5">Rev Growth Rate (%)</th>
-        <th class="header" id="header-0-6">Subsector</th>
-      </tr>
-      <tr class="row" id="row-0">
-        <td class="data" id="data-0-0">IONQ</td>
-        <td class="data" id="data-0-1">IonQ</td>
-        <td class="data" id="data-0-2">982</td>
-        <td class="data" id="data-0-3">105.9</td>
-        <td class="data" id="data-0-4">32.6</td>
-        <td class="data" id="data-0-5">102.8</td>
-        <td class="data" id="data-0-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-1">
-        <td class="data" id="data-1-0">NVDA</td>
-        <td class="data" id="data-1-1">NVIDIA</td>
-        <td class="data" id="data-1-2">384,720</td>
-        <td class="data" id="data-1-3">10.6</td>
-        <td class="data" id="data-1-4">13.0</td>
-        <td class="data" id="data-1-5">9.3</td>
-        <td class="data" id="data-1-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-2">
-        <td class="data" id="data-2-0">ASML</td>
-        <td class="data" id="data-2-1">ASML</td>
-        <td class="data" id="data-2-2">237,320</td>
-        <td class="data" id="data-2-3">9.8</td>
-        <td class="data" id="data-2-4">8.9</td>
-        <td class="data" id="data-2-5">23.4</td>
-        <td class="data" id="data-2-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-3">
-        <td class="data" id="data-3-0">CGNX</td>
-        <td class="data" id="data-3-1">Cognex</td>
-        <td class="data" id="data-3-2">8,460</td>
-        <td class="data" id="data-3-3">7.0</td>
-        <td class="data" id="data-3-4">7.9</td>
-        <td class="data" id="data-3-5">0.6</td>
-        <td class="data" id="data-3-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-4">
-        <td class="data" id="data-4-0">NVTS</td>
-        <td class="data" id="data-4-1">Navitas Semiconductor</td>
-        <td class="data" id="data-4-2">684</td>
-        <td class="data" id="data-4-3">12.1</td>
-        <td class="data" id="data-4-4">7.0</td>
-        <td class="data" id="data-4-5">113.8</td>
-        <td class="data" id="data-4-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-5">
-        <td class="data" id="data-5-0">AMBA</td>
-        <td class="data" id="data-5-1">Ambarella</td>
-        <td class="data" id="data-5-2">2,660</td>
-        <td class="data" id="data-5-3">5.4</td>
-        <td class="data" id="data-5-4">6.1</td>
-        <td class="data" id="data-5-5">17.6</td>
-        <td class="data" id="data-5-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-6">
-        <td class="data" id="data-6-0">LCID</td>
-        <td class="data" id="data-6-1">Lucid</td>
-        <td class="data" id="data-6-2">16,400</td>
-        <td class="data" id="data-6-3">116.8</td>
-        <td class="data" id="data-6-4">5.8</td>
-        <td class="data" id="data-6-5">257.4</td>
-        <td class="data" id="data-6-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-7">
-        <td class="data" id="data-7-0">IOT</td>
-        <td class="data" id="data-7-1">Samsara</td>
-        <td class="data" id="data-7-2">4,750</td>
-        <td class="data" id="data-7-3">10.2</td>
-        <td class="data" id="data-7-4">5.1</td>
-        <td class="data" id="data-7-5">29.3</td>
-        <td class="data" id="data-7-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-8">
-        <td class="data" id="data-8-0">TSLA</td>
-        <td class="data" id="data-8-1">Tesla</td>
-        <td class="data" id="data-8-2">577,430</td>
-        <td class="data" id="data-8-3">9.2</td>
-        <td class="data" id="data-8-4">4.8</td>
-        <td class="data" id="data-8-5">39.7</td>
-        <td class="data" id="data-8-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-9">
-        <td class="data" id="data-9-0">AMD</td>
-        <td class="data" id="data-9-1">AMD</td>
-        <td class="data" id="data-9-2">118,330</td>
-        <td class="data" id="data-9-3">4.5</td>
-        <td class="data" id="data-9-4">4.6</td>
-        <td class="data" id="data-9-5">6.1</td>
-        <td class="data" id="data-9-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-10">
-        <td class="data" id="data-10-0">PATH</td>
-        <td class="data" id="data-10-1">UiPath</td>
-        <td class="data" id="data-10-2">6,470</td>
-        <td class="data" id="data-10-3">5.2</td>
-        <td class="data" id="data-10-4">4.0</td>
-        <td class="data" id="data-10-5">19.1</td>
-        <td class="data" id="data-10-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-11">
-        <td class="data" id="data-11-0">AMAT</td>
-        <td class="data" id="data-11-1">Applied Materials</td>
-        <td class="data" id="data-11-2">88,830</td>
-        <td class="data" id="data-11-3">3.1</td>
-        <td class="data" id="data-11-4">3.9</td>
-        <td class="data" id="data-11-5">-2.5</td>
-        <td class="data" id="data-11-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-12">
-        <td class="data" id="data-12-0">INDI</td>
-        <td class="data" id="data-12-1">indie Semiconductor</td>
-        <td class="data" id="data-12-2">972</td>
-        <td class="data" id="data-12-3">9.5</td>
-        <td class="data" id="data-12-4">3.8</td>
-        <td class="data" id="data-12-5">101.0</td>
-        <td class="data" id="data-12-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-13">
-        <td class="data" id="data-13-0">QCOM</td>
-        <td class="data" id="data-13-1">QUALCOMM</td>
-        <td class="data" id="data-13-2">134,000</td>
-        <td class="data" id="data-13-3">3.4</td>
-        <td class="data" id="data-13-4">3.2</td>
-        <td class="data" id="data-13-5">11.9</td>
-        <td class="data" id="data-13-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-14">
-        <td class="data" id="data-14-0">RIVN</td>
-        <td class="data" id="data-14-1">Rivian</td>
-        <td class="data" id="data-14-2">26,570</td>
-        <td class="data" id="data-14-3">35.6</td>
-        <td class="data" id="data-14-4">2.7</td>
-        <td class="data" id="data-14-5">218.8</td>
-        <td class="data" id="data-14-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-15">
-        <td class="data" id="data-15-0">INTC</td>
-        <td class="data" id="data-15-1">Intel</td>
-        <td class="data" id="data-15-2">121,090</td>
-        <td class="data" id="data-15-3">1.6</td>
-        <td class="data" id="data-15-4">2.3</td>
-        <td class="data" id="data-15-5">-4.0</td>
-        <td class="data" id="data-15-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-16">
-        <td class="data" id="data-16-0">DDD</td>
-        <td class="data" id="data-16-1">3D Systems</td>
-        <td class="data" id="data-16-2">1,210</td>
-        <td class="data" id="data-16-3">1.7</td>
-        <td class="data" id="data-16-4">2.0</td>
-        <td class="data" id="data-16-5">4.4</td>
-        <td class="data" id="data-16-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-17">
-        <td class="data" id="data-17-0">DM</td>
-        <td class="data" id="data-17-1">Desktop Metal</td>
-        <td class="data" id="data-17-2">632</td>
-        <td class="data" id="data-17-3">4.2</td>
-        <td class="data" id="data-17-4">2.0</td>
-        <td class="data" id="data-17-5">26.5</td>
-        <td class="data" id="data-17-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-18">
-        <td class="data" id="data-18-0">MTLS</td>
-        <td class="data" id="data-18-1">Materialise</td>
-        <td class="data" id="data-18-2">569</td>
-        <td class="data" id="data-18-3">2.5</td>
-        <td class="data" id="data-18-4">1.9</td>
-        <td class="data" id="data-18-5">12.1</td>
-        <td class="data" id="data-18-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-19">
-        <td class="data" id="data-19-0">AI</td>
-        <td class="data" id="data-19-1">C3.ai</td>
-        <td class="data" id="data-19-2">1,330</td>
-        <td class="data" id="data-19-3">1.9</td>
-        <td class="data" id="data-19-4">1.3</td>
-        <td class="data" id="data-19-5">20.9</td>
-        <td class="data" id="data-19-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-20">
-        <td class="data" id="data-20-0">PRLB</td>
-        <td class="data" id="data-20-1">Proto Labs</td>
-        <td class="data" id="data-20-2">697</td>
-        <td class="data" id="data-20-3">2.0</td>
-        <td class="data" id="data-20-4">1.3</td>
-        <td class="data" id="data-20-5">-2.1</td>
-        <td class="data" id="data-20-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-21">
-        <td class="data" id="data-21-0">GM</td>
-        <td class="data" id="data-21-1">General Motors</td>
-        <td class="data" id="data-21-2">56,470</td>
-        <td class="data" id="data-21-3">1.0</td>
-        <td class="data" id="data-21-4">0.9</td>
-        <td class="data" id="data-21-5">3.9</td>
-        <td class="data" id="data-21-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-22">
-        <td class="data" id="data-22-0">SSYS</td>
-        <td class="data" id="data-22-1">Stratasys</td>
-        <td class="data" id="data-22-2">944</td>
-        <td class="data" id="data-22-3">0.8</td>
-        <td class="data" id="data-22-4">0.9</td>
-        <td class="data" id="data-22-5">0.9</td>
-        <td class="data" id="data-22-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-23">
-        <td class="data" id="data-23-0">SYM</td>
-        <td class="data" id="data-23-1">Symbotic</td>
-        <td class="data" id="data-23-2">644</td>
-        <td class="data" id="data-23-3">0.8</td>
-        <td class="data" id="data-23-4">0.2</td>
-        <td class="data" id="data-23-5">60.0</td>
-        <td class="data" id="data-23-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-24">
-        <td class="data" id="data-24-0">FANUY</td>
-        <td class="data" id="data-24-1">Fanuc</td>
-        <td class="data" id="data-24-2">28,060</td>
-        <td class="data" id="data-24-3">NM</td>
-        <td class="data" id="data-24-4">0.0</td>
-        <td class="data" id="data-24-5">None</td>
-        <td class="data" id="data-24-6">Manufacturing</td>
-      </tr>
-      <tr class="row" id="row-25">
-        <td class="data" id="data-25-0">NNDM</td>
-        <td class="data" id="data-25-1">Nano Dimension</td>
-        <td class="data" id="data-25-2">610</td>
-        <td class="data" id="data-25-3">NM</td>
-        <td class="data" id="data-25-4">-14.9</td>
-        <td class="data" id="data-25-5">724.0</td>
-        <td class="data" id="data-25-6">Manufacturing</td>
-      </tr>
-    </table>
-  </body>
+<head>
+<style>
+table {
+  border: thin solid grey;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  border_spacing: 0;
+  width: 1000px;
+  border: 1px solid #ddd;
+  }
+
+tr {
+  margin: 0;
+  border: thin solid grey;
+  border-bottom: thin solid grey;
+  }
+th {
+  padding: 10px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #3954C8;
+  position: sticky;
+  cursor: pointer;
+  }
+
+tr:first-of-type {
+  position:sticky;
+  }
+
+th:nth-child(3) {
+  text-align: center;
+  width: 10%;
+  }
+
+th:nth-child(4) {
+  text-align: center;
+  width: 10%;
+  }
+
+th:nth-child(5) {
+  text-align: center;
+  width:10%
+  }
+
+th:nth-child(6) {
+  text-align: center;
+  width: 10%;
+  }
+
+th:nth-child(7) {
+  text-align: center;
+  }
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+  }
+
+td:nth-child(3) {
+  text-align: center;
+  }
+
+td:nth-child(4) {
+  text-align: center;
+  }
+
+td:nth-child(5) {
+  text-align: center;
+  }
+
+td:nth-child(6) {
+  text-align: center;
+  }
+
+td:nth-child(7) {
+  text-align: center;
+  }
+
+tr:hover {
+  color: #ffffff;
+  background-color: #000000;
+  }
+
+tr:hover a {color: #FFFFFF;}
+
+th[data-sort=asc]::after {
+  content: " (↑)";
+  }
+
+th[data-sort=desc]::after {
+  content: " (↓)";
+  }
+
+</style>
+</head>
+<body>
+
+<table class="table" id = "testTable">
+  <tr>
+    <th class="header" id="header-0-0">Ticker</th>
+    <th class="header" id="header-0-1">Company Name</th>
+    <th class="header" id="header-0-2">Market Cap ($M)</th>
+    <th class="header" id="header-0-3">EV/TTM Rev Mult</th>
+    <th class="header" id="header-0-4">EV/2023 Rev Mult</th>
+    <th class="header" id="header-0-5">Rev Growth Rate (%)</th>
+    <th class="header" id="header-0-6">Subsector</th>
+  </tr>
+  <tr class="row" id="row-0">
+    <td class="data" id="data-0-0"><a target="_blank" href="https://finance.yahoo.com/quote/IONQ?p=IONQ">IONQ</a></td>
+    <td class="data" id="data-0-1"><a target="_blank" href="https://ionq.com/">IonQ</a></td>
+    <td class="data" id="data-0-2">881</td>
+    <td class="data" id="data-0-3">65.7</a></td>
+    <td class="data" id="data-0-4">27.7</a></td>
+    <td class="data" id="data-0-5">400.4</a></td>
+    <td class="data" id="data-0-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-1">
+    <td class="data" id="data-1-0"><a target="_blank" href="https://finance.yahoo.com/quote/NVDA?p=NVDA">NVDA</a></td>
+    <td class="data" id="data-1-1"><a target="_blank" href="https://www.nvidia.com/">NVIDIA</a></td>
+    <td class="data" id="data-1-2">415,715</td>
+    <td class="data" id="data-1-3">14.5</a></td>
+    <td class="data" id="data-1-4">14.0</a></td>
+    <td class="data" id="data-1-5">0.1</a></td>
+    <td class="data" id="data-1-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-2">
+    <td class="data" id="data-2-0"><a target="_blank" href="https://finance.yahoo.com/quote/AMBA?p=AMBA">AMBA</a></td>
+    <td class="data" id="data-2-1"><a target="_blank" href="https://www.ambarella.com/">Ambarella</a></td>
+    <td class="data" id="data-2-2">3,386</td>
+    <td class="data" id="data-2-3">9.3</a></td>
+    <td class="data" id="data-2-4">9.2</a></td>
+    <td class="data" id="data-2-5">1.6</a></td>
+    <td class="data" id="data-2-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-3">
+    <td class="data" id="data-3-0"><a target="_blank" href="https://finance.yahoo.com/quote/ASML?p=ASML">ASML</a></td>
+    <td class="data" id="data-3-1"><a target="_blank" href="https://www.asml.com/en">ASML</a></td>
+    <td class="data" id="data-3-2">265,945</td>
+    <td class="data" id="data-3-3">12.5</a></td>
+    <td class="data" id="data-3-4">8.5</a></td>
+    <td class="data" id="data-3-5">1.1</a></td>
+    <td class="data" id="data-3-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-4">
+    <td class="data" id="data-4-0"><a target="_blank" href="https://finance.yahoo.com/quote/CGNX?p=CGNX">CGNX</a></td>
+    <td class="data" id="data-4-1"><a target="_blank" href="https://www.cognex.com/">Cognex</a></td>
+    <td class="data" id="data-4-2">9,199</td>
+    <td class="data" id="data-4-3">8.6</a></td>
+    <td class="data" id="data-4-4">7.7</a></td>
+    <td class="data" id="data-4-5">-2.4</a></td>
+    <td class="data" id="data-4-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-5">
+    <td class="data" id="data-5-0"><a target="_blank" href="https://finance.yahoo.com/quote/NVTS?p=NVTS">NVTS</a></td>
+    <td class="data" id="data-5-1"><a target="_blank" href="https://navitassemi.com/">Navitas Semiconductor</a></td>
+    <td class="data" id="data-5-2">702</td>
+    <td class="data" id="data-5-3">17.8</a></td>
+    <td class="data" id="data-5-4">7.7</a></td>
+    <td class="data" id="data-5-5">59.6</a></td>
+    <td class="data" id="data-5-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-6">
+    <td class="data" id="data-6-0"><a target="_blank" href="https://finance.yahoo.com/quote/IOT?p=IOT">IOT</a></td>
+    <td class="data" id="data-6-1"><a target="_blank" href="https://www.samsara.com/">Samsara</a></td>
+    <td class="data" id="data-6-2">6,231</td>
+    <td class="data" id="data-6-3">9.3</a></td>
+    <td class="data" id="data-6-4">6.7</a></td>
+    <td class="data" id="data-6-5">48.7</a></td>
+    <td class="data" id="data-6-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-7">
+    <td class="data" id="data-7-0"><a target="_blank" href="https://finance.yahoo.com/quote/PATH?p=PATH">PATH</a></td>
+    <td class="data" id="data-7-1"><a target="_blank" href="https://www.uipath.com/">UiPath</a></td>
+    <td class="data" id="data-7-2">7,634</td>
+    <td class="data" id="data-7-3">5.7</a></td>
+    <td class="data" id="data-7-4">4.9</a></td>
+    <td class="data" id="data-7-5">15.2</a></td>
+    <td class="data" id="data-7-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-8">
+    <td class="data" id="data-8-0"><a target="_blank" href="https://finance.yahoo.com/quote/AMAT?p=AMAT">AMAT</a></td>
+    <td class="data" id="data-8-1"><a target="_blank" href="https://www.appliedmaterials.com/">Applied Materials</a></td>
+    <td class="data" id="data-8-2">92,830</td>
+    <td class="data" id="data-8-3">3.7</a></td>
+    <td class="data" id="data-8-4">4.1</a></td>
+    <td class="data" id="data-8-5">-6.1</a></td>
+    <td class="data" id="data-8-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-9">
+    <td class="data" id="data-9-0"><a target="_blank" href="https://finance.yahoo.com/quote/AMD?p=AMD">AMD</a></td>
+    <td class="data" id="data-9-1"><a target="_blank" href="https://www.amd.com/en">AMD</a></td>
+    <td class="data" id="data-9-2">114,477</td>
+    <td class="data" id="data-9-3">4.9</a></td>
+    <td class="data" id="data-9-4">3.9</a></td>
+    <td class="data" id="data-9-5">43.2</a></td>
+    <td class="data" id="data-9-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-10">
+    <td class="data" id="data-10-0"><a target="_blank" href="https://finance.yahoo.com/quote/INDI?p=INDI">INDI</a></td>
+    <td class="data" id="data-10-1"><a target="_blank" href="https://www.indiesemi.com/">indie Semiconductor</a></td>
+    <td class="data" id="data-10-2">887</td>
+    <td class="data" id="data-10-3">7.6</a></td>
+    <td class="data" id="data-10-4">3.3</a></td>
+    <td class="data" id="data-10-5">128.7</a></td>
+    <td class="data" id="data-10-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-11">
+    <td class="data" id="data-11-0"><a target="_blank" href="https://finance.yahoo.com/quote/QCOM?p=QCOM">QCOM</a></td>
+    <td class="data" id="data-11-1"><a target="_blank" href="https://www.qualcomm.com/">QUALCOMM</a></td>
+    <td class="data" id="data-11-2">134,789</td>
+    <td class="data" id="data-11-3">3.3</a></td>
+    <td class="data" id="data-11-4">3.2</a></td>
+    <td class="data" id="data-11-5">-9.1</a></td>
+    <td class="data" id="data-11-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-12">
+    <td class="data" id="data-12-0"><a target="_blank" href="https://finance.yahoo.com/quote/VLN?p=VLN">VLN</a></td>
+    <td class="data" id="data-12-1"><a target="_blank" href="https://www.valens.com/">Valens Semiconductor</a></td>
+    <td class="data" id="data-12-2">512</td>
+    <td class="data" id="data-12-3">4.1</a></td>
+    <td class="data" id="data-12-4">3.2</a></td>
+    <td class="data" id="data-12-5">27.9</a></td>
+    <td class="data" id="data-12-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-13">
+    <td class="data" id="data-13-0"><a target="_blank" href="https://finance.yahoo.com/quote/LCID?p=LCID">LCID</a></td>
+    <td class="data" id="data-13-1"><a target="_blank" href="https://www.lucidmotors.com/">Lucid</a></td>
+    <td class="data" id="data-13-2">14,900</td>
+    <td class="data" id="data-13-3">36.0</a></td>
+    <td class="data" id="data-13-4">2.8</a></td>
+    <td class="data" id="data-13-5">NM</a></td>
+    <td class="data" id="data-13-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-14">
+    <td class="data" id="data-14-0"><a target="_blank" href="https://finance.yahoo.com/quote/TSLA?p=TSLA">TSLA</a></td>
+    <td class="data" id="data-14-1"><a target="_blank" href="https://www.tesla.com/">Tesla</a></td>
+    <td class="data" id="data-14-2">386,508</td>
+    <td class="data" id="data-14-3">4.9</a></td>
+    <td class="data" id="data-14-4">2.7</a></td>
+    <td class="data" id="data-14-5">55.2</a></td>
+    <td class="data" id="data-14-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-15">
+    <td class="data" id="data-15-0"><a target="_blank" href="https://finance.yahoo.com/quote/INTC?p=INTC">INTC</a></td>
+    <td class="data" id="data-15-1"><a target="_blank" href="https://www.intel.com">Intel</a></td>
+    <td class="data" id="data-15-2">124,263</td>
+    <td class="data" id="data-15-3">2.0</a></td>
+    <td class="data" id="data-15-4">2.1</a></td>
+    <td class="data" id="data-15-5">-19.6</a></td>
+    <td class="data" id="data-15-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-16">
+    <td class="data" id="data-16-0"><a target="_blank" href="https://finance.yahoo.com/quote/DM?p=DM">DM</a></td>
+    <td class="data" id="data-16-1"><a target="_blank" href="https://www.desktopmetal.com/">Desktop Metal</a></td>
+    <td class="data" id="data-16-2">577</td>
+    <td class="data" id="data-16-3">2.3</a></td>
+    <td class="data" id="data-16-4">2.0</a></td>
+    <td class="data" id="data-16-5">114.3</a></td>
+    <td class="data" id="data-16-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-17">
+    <td class="data" id="data-17-0"><a target="_blank" href="https://finance.yahoo.com/quote/MTLS?p=MTLS">MTLS</a></td>
+    <td class="data" id="data-17-1"><a target="_blank" href="https://www.materialise.com/en">Materialise</a></td>
+    <td class="data" id="data-17-2">561</td>
+    <td class="data" id="data-17-3">2.0</a></td>
+    <td class="data" id="data-17-4">1.9</a></td>
+    <td class="data" id="data-17-5">-5.5</a></td>
+    <td class="data" id="data-17-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-18">
+    <td class="data" id="data-18-0"><a target="_blank" href="https://finance.yahoo.com/quote/DDD?p=DDD">DDD</a></td>
+    <td class="data" id="data-18-1"><a target="_blank" href="https://www.3dsystems.com/">3D Systems</a></td>
+    <td class="data" id="data-18-2">1,198</td>
+    <td class="data" id="data-18-3">1.9</a></td>
+    <td class="data" id="data-18-4">1.8</a></td>
+    <td class="data" id="data-18-5">-12.3</a></td>
+    <td class="data" id="data-18-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-19">
+    <td class="data" id="data-19-0"><a target="_blank" href="https://finance.yahoo.com/quote/AI?p=AI">AI</a></td>
+    <td class="data" id="data-19-1"><a target="_blank" href="https://c3.ai/">C3.ai</a></td>
+    <td class="data" id="data-19-2">1,394</td>
+    <td class="data" id="data-19-3">2.1</a></td>
+    <td class="data" id="data-19-4">1.8</a></td>
+    <td class="data" id="data-19-5">3.5</a></td>
+    <td class="data" id="data-19-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-20">
+    <td class="data" id="data-20-0"><a target="_blank" href="https://finance.yahoo.com/quote/PRLB?p=PRLB">PRLB</a></td>
+    <td class="data" id="data-20-1"><a target="_blank" href="https://www.protolabs.com/">Proto Labs</a></td>
+    <td class="data" id="data-20-2">746</td>
+    <td class="data" id="data-20-3">1.3</a></td>
+    <td class="data" id="data-20-4">1.4</a></td>
+    <td class="data" id="data-20-5">-1.1</a></td>
+    <td class="data" id="data-20-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-21">
+    <td class="data" id="data-21-0"><a target="_blank" href="https://finance.yahoo.com/quote/GM?p=GM">GM</a></td>
+    <td class="data" id="data-21-1"><a target="_blank" href="https://www.gm.com/">General Motors</a></td>
+    <td class="data" id="data-21-2">51,869</td>
+    <td class="data" id="data-21-3">0.9</a></td>
+    <td class="data" id="data-21-4">0.8</a></td>
+    <td class="data" id="data-21-5">21.4</a></td>
+    <td class="data" id="data-21-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-22">
+    <td class="data" id="data-22-0"><a target="_blank" href="https://finance.yahoo.com/quote/SSYS?p=SSYS">SSYS</a></td>
+    <td class="data" id="data-22-1"><a target="_blank" href="https://www.stratasys.com/">Stratasys</a></td>
+    <td class="data" id="data-22-2">906</td>
+    <td class="data" id="data-22-3">0.8</a></td>
+    <td class="data" id="data-22-4">0.8</a></td>
+    <td class="data" id="data-22-5">7.0</a></td>
+    <td class="data" id="data-22-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-23">
+    <td class="data" id="data-23-0"><a target="_blank" href="https://finance.yahoo.com/quote/RIVN?p=RIVN">RIVN</a></td>
+    <td class="data" id="data-23-1"><a target="_blank" href="https://rivian.com/">Rivian</a></td>
+    <td class="data" id="data-23-2">15,149</td>
+    <td class="data" id="data-23-3">3.0</a></td>
+    <td class="data" id="data-23-4">0.3</a></td>
+    <td class="data" id="data-23-5">NM</a></td>
+    <td class="data" id="data-23-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-24">
+    <td class="data" id="data-24-0"><a target="_blank" href="https://finance.yahoo.com/quote/SYM?p=SYM">SYM</a></td>
+    <td class="data" id="data-24-1"><a target="_blank" href="https://www.symbotic.com/">Symbotic</a></td>
+    <td class="data" id="data-24-2">621</td>
+    <td class="data" id="data-24-3">0.6</a></td>
+    <td class="data" id="data-24-4">0.2</a></td>
+    <td class="data" id="data-24-5">57.9</a></td>
+    <td class="data" id="data-24-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-25">
+    <td class="data" id="data-25-0"><a target="_blank" href="https://finance.yahoo.com/quote/FANUY?p=FANUY">FANUY</a></td>
+    <td class="data" id="data-25-1"><a target="_blank" href="https://www.fanucamerica.com/">Fanuc</a></td>
+    <td class="data" id="data-25-2">31,001</td>
+    <td class="data" id="data-25-3">4.2</a></td>
+    <td class="data" id="data-25-4">nan</a></td>
+    <td class="data" id="data-25-5">NM</a></td>
+    <td class="data" id="data-25-6">Manufacturing</td>
+  </tr>
+  <tr class="row" id="row-26">
+    <td class="data" id="data-26-0"><a target="_blank" href="https://finance.yahoo.com/quote/NNDM?p=NNDM">NNDM</a></td>
+    <td class="data" id="data-26-1"><a target="_blank" href="https://www.nano-di.com/">Nano Dimension</a></td>
+    <td class="data" id="data-26-2">651</td>
+    <td class="data" id="data-26-3">NM</a></td>
+    <td class="data" id="data-26-4">nan</a></td>
+    <td class="data" id="data-26-5">NM</a></td>
+    <td class="data" id="data-26-6">Manufacturing</td>
+  </tr>
+
+</table>
+</body>
 </html>
-<script>const tables = document.getElementsByClassName('table')
+
+<script>
+const tables = document.getElementsByClassName('table')
 for (const table of tables) {
     const root = document.getElementById('root')
     const rows = Array.prototype.slice.call(table.children[0].getElementsByClassName('row'))
@@ -375,80 +480,4 @@ for (const table of tables) {
     }
 }
 </script>
-<style>@charset "UTF-8";
-.table {
-  border: thin solid grey;
-  border-radius: 1rem;
-  overflow: hidden;
-  border-spacing: 0;
-  font-family: "Poppins", sans-serif;
-}
-.table tr {
-  margin: 0;
-  padding: 6px;
-  border: thin solid grey;
-  border-bottom: thin solid grey;
-}
-.table tr:first-of-type {
-  color: #ffffff;
-  background-color: #3954C8;
-}
-.table tr:nth-child(odd):not(:first-of-type) {
-  color: #000000;
-  background-color: #f3f3f3;
-}
-.table tr:nth-child(even) {
-  color: #000000;
-  background-color: #ffffff;
-}
-.table tr th, .table tr td {
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-bottom: thin solid grey;
-}
-.table tr th {
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 1.2rem;
-  min-width: 2rem;
-  text-align: left;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.table tr th[data-sort=asc]::after {
-  content: " (↑)";
-}
-.table tr th[data-sort=desc]::after {
-  content: " (↓)";
-}
-.table tr td:nth-child(3) {
-  text-align: center;
-}
-.table tr td:nth-child(4) {
-  text-align: center;
-}
-.table tr td:nth-child(5) {
-  text-align: center;
-}
-.table tr td:nth-child(6) {
-  text-align: center;
-}
-.table tr td:nth-child(7) {
-  text-align: center;
-}
-.table tr td:nth-child(8) {
-  text-align: center;
-}
-.table tr {
-  padding: 6px;
-  border-bottom: thin solid grey;
-}
-.table tr:hover {
-  font-weight: bold;
-}
 
-/*# sourceMappingURL=style.css.map */
-</style>

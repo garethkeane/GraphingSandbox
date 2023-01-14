@@ -1,140 +1,227 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Dominate</title>
-  </head>
-  <body>
-    <table class="table">
-      <tr>
-        <th class="header" id="header-0-0">Ticker</th>
-        <th class="header" id="header-0-1">Company Name</th>
-        <th class="header" id="header-0-2">Market Cap ($M)</th>
-        <th class="header" id="header-0-3">EV/TTM Rev Mult</th>
-        <th class="header" id="header-0-4">EV/2023 Rev Mult</th>
-        <th class="header" id="header-0-5">Rev Growth Rate (%)</th>
-        <th class="header" id="header-0-6">Subsector</th>
-      </tr>
-      <tr class="row" id="row-0">
-        <td class="data" id="data-0-0">BEAM</td>
-        <td class="data" id="data-0-1">Beam Therapeutics</td>
-        <td class="data" id="data-0-2">3,070</td>
-        <td class="data" id="data-0-3">28.9</td>
-        <td class="data" id="data-0-4">49.9</td>
-        <td class="data" id="data-0-5">-21.3</td>
-        <td class="data" id="data-0-6">Health</td>
-      </tr>
-      <tr class="row" id="row-1">
-        <td class="data" id="data-1-0">RXRX</td>
-        <td class="data" id="data-1-1">Recursion Pharmaceuticals</td>
-        <td class="data" id="data-1-2">1,590</td>
-        <td class="data" id="data-1-3">75.9</td>
-        <td class="data" id="data-1-4">19.3</td>
-        <td class="data" id="data-1-5">29.0</td>
-        <td class="data" id="data-1-6">Health</td>
-      </tr>
-      <tr class="row" id="row-2">
-        <td class="data" id="data-2-0">CRSP</td>
-        <td class="data" id="data-2-1">CRISPR Therapeutics</td>
-        <td class="data" id="data-2-2">4,180</td>
-        <td class="data" id="data-2-3">167.5</td>
-        <td class="data" id="data-2-4">15.8</td>
-        <td class="data" id="data-2-5">5,879.7</td>
-        <td class="data" id="data-2-6">Health</td>
-      </tr>
-      <tr class="row" id="row-3">
-        <td class="data" id="data-3-0">ISRG</td>
-        <td class="data" id="data-3-1">Intuitive Surgical</td>
-        <td class="data" id="data-3-2">92,810</td>
-        <td class="data" id="data-3-3">13.3</td>
-        <td class="data" id="data-3-4">12.6</td>
-        <td class="data" id="data-3-5">12.2</td>
-        <td class="data" id="data-3-6">Health</td>
-      </tr>
-      <tr class="row" id="row-4">
-        <td class="data" id="data-4-0">VEEV</td>
-        <td class="data" id="data-4-1">Veeva</td>
-        <td class="data" id="data-4-2">28,330</td>
-        <td class="data" id="data-4-3">11.4</td>
-        <td class="data" id="data-4-4">10.4</td>
-        <td class="data" id="data-4-5">14.8</td>
-        <td class="data" id="data-4-6">Health</td>
-      </tr>
-      <tr class="row" id="row-5">
-        <td class="data" id="data-5-0">ILMN</td>
-        <td class="data" id="data-5-1">Illumina</td>
-        <td class="data" id="data-5-2">34,120</td>
-        <td class="data" id="data-5-3">8.2</td>
-        <td class="data" id="data-5-4">7.1</td>
-        <td class="data" id="data-5-5">9.8</td>
-        <td class="data" id="data-5-6">Health</td>
-      </tr>
-      <tr class="row" id="row-6">
-        <td class="data" id="data-6-0">DNA</td>
-        <td class="data" id="data-6-1">Ginkgo Bioworks</td>
-        <td class="data" id="data-6-2">3,590</td>
-        <td class="data" id="data-6-3">5.6</td>
-        <td class="data" id="data-6-4">6.3</td>
-        <td class="data" id="data-6-5">-18.9</td>
-        <td class="data" id="data-6-6">Health</td>
-      </tr>
-      <tr class="row" id="row-7">
-        <td class="data" id="data-7-0">TXG</td>
-        <td class="data" id="data-7-1">10x Genomics</td>
-        <td class="data" id="data-7-2">4,010</td>
-        <td class="data" id="data-7-3">5.3</td>
-        <td class="data" id="data-7-4">5.9</td>
-        <td class="data" id="data-7-5">21.9</td>
-        <td class="data" id="data-7-6">Health</td>
-      </tr>
-      <tr class="row" id="row-8">
-        <td class="data" id="data-8-0">VCYT</td>
-        <td class="data" id="data-8-1">Veracyte</td>
-        <td class="data" id="data-8-2">1,810</td>
-        <td class="data" id="data-8-3">4.2</td>
-        <td class="data" id="data-8-4">5.0</td>
-        <td class="data" id="data-8-5">13.4</td>
-        <td class="data" id="data-8-6">Health</td>
-      </tr>
-      <tr class="row" id="row-9">
-        <td class="data" id="data-9-0">BFLY</td>
-        <td class="data" id="data-9-1">Butterfly Network</td>
-        <td class="data" id="data-9-2">612</td>
-        <td class="data" id="data-9-3">9.4</td>
-        <td class="data" id="data-9-4">4.1</td>
-        <td class="data" id="data-9-5">23.4</td>
-        <td class="data" id="data-9-6">Health</td>
-      </tr>
-      <tr class="row" id="row-10">
-        <td class="data" id="data-10-0">TWST</td>
-        <td class="data" id="data-10-1">Twist Bioscience</td>
-        <td class="data" id="data-10-2">1,420</td>
-        <td class="data" id="data-10-3">7.8</td>
-        <td class="data" id="data-10-4">2.9</td>
-        <td class="data" id="data-10-5">30.2</td>
-        <td class="data" id="data-10-6">Health</td>
-      </tr>
-      <tr class="row" id="row-11">
-        <td class="data" id="data-11-0">OMCL</td>
-        <td class="data" id="data-11-1">Omnicell</td>
-        <td class="data" id="data-11-2">2,320</td>
-        <td class="data" id="data-11-3">3.0</td>
-        <td class="data" id="data-11-4">2.2</td>
-        <td class="data" id="data-11-5">-5.7</td>
-        <td class="data" id="data-11-6">Health</td>
-      </tr>
-      <tr class="row" id="row-12">
-        <td class="data" id="data-12-0">EXAI</td>
-        <td class="data" id="data-12-1">Exscientia</td>
-        <td class="data" id="data-12-2">661</td>
-        <td class="data" id="data-12-3">8.2</td>
-        <td class="data" id="data-12-4">-0.1</td>
-        <td class="data" id="data-12-5">-14.4</td>
-        <td class="data" id="data-12-6">Health</td>
-      </tr>
-    </table>
-  </body>
+<head>
+<style>
+table {
+  border: thin solid grey;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  border_spacing: 0;
+  width: 1000px;
+  border: 1px solid #ddd;
+  }
+
+tr {
+  margin: 0;
+  border: thin solid grey;
+  border-bottom: thin solid grey;
+  }
+th {
+  padding: 10px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #3954C8;
+  position: sticky;
+  cursor: pointer;
+  }
+
+tr:first-of-type {
+  position:sticky;
+  }
+
+th:nth-child(3) {
+  text-align: center;
+  width: 10%;
+  }
+
+th:nth-child(4) {
+  text-align: center;
+  width: 10%;
+  }
+
+th:nth-child(5) {
+  text-align: center;
+  width:10%
+  }
+
+th:nth-child(6) {
+  text-align: center;
+  width: 10%;
+  }
+
+th:nth-child(7) {
+  text-align: center;
+  }
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+  }
+
+td:nth-child(3) {
+  text-align: center;
+  }
+
+td:nth-child(4) {
+  text-align: center;
+  }
+
+td:nth-child(5) {
+  text-align: center;
+  }
+
+td:nth-child(6) {
+  text-align: center;
+  }
+
+td:nth-child(7) {
+  text-align: center;
+  }
+
+tr:hover {
+  color: #ffffff;
+  background-color: #000000;
+  }
+
+tr:hover a {color: #FFFFFF;}
+
+th[data-sort=asc]::after {
+  content: " (↑)";
+  }
+
+th[data-sort=desc]::after {
+  content: " (↓)";
+  }
+
+</style>
+</head>
+<body>
+
+<table class="table" id = "testTable">
+  <tr>
+    <th class="header" id="header-0-0">Ticker</th>
+    <th class="header" id="header-0-1">Company Name</th>
+    <th class="header" id="header-0-2">Market Cap ($M)</th>
+    <th class="header" id="header-0-3">EV/TTM Rev Mult</th>
+    <th class="header" id="header-0-4">EV/2023 Rev Mult</th>
+    <th class="header" id="header-0-5">Rev Growth Rate (%)</th>
+    <th class="header" id="header-0-6">Subsector</th>
+  </tr>
+  <tr class="row" id="row-0">
+    <td class="data" id="data-0-0"><a target="_blank" href="https://finance.yahoo.com/quote/BEAM?p=BEAM">BEAM</a></td>
+    <td class="data" id="data-0-1"><a target="_blank" href="https://beamtx.com/">Beam Therapeutics</a></td>
+    <td class="data" id="data-0-2">3,042</td>
+    <td class="data" id="data-0-3">21.2</a></td>
+    <td class="data" id="data-0-4">40.1</a></td>
+    <td class="data" id="data-0-5">3.6</a></td>
+    <td class="data" id="data-0-6">Health</td>
+  </tr>
+  <tr class="row" id="row-1">
+    <td class="data" id="data-1-0"><a target="_blank" href="https://finance.yahoo.com/quote/RXRX?p=RXRX">RXRX</a></td>
+    <td class="data" id="data-1-1"><a target="_blank" href="https://www.recursion.com/">Recursion Pharmaceuticals</a></td>
+    <td class="data" id="data-1-2">1,649</td>
+    <td class="data" id="data-1-3">41.9</a></td>
+    <td class="data" id="data-1-4">19.4</a></td>
+    <td class="data" id="data-1-5">378.8</a></td>
+    <td class="data" id="data-1-6">Health</td>
+  </tr>
+  <tr class="row" id="row-2">
+    <td class="data" id="data-2-0"><a target="_blank" href="https://finance.yahoo.com/quote/ISRG?p=ISRG">ISRG</a></td>
+    <td class="data" id="data-2-1"><a target="_blank" href="https://www.intuitive.com/">Intuitive Surgical</a></td>
+    <td class="data" id="data-2-2">91,491</td>
+    <td class="data" id="data-2-3">14.3</a></td>
+    <td class="data" id="data-2-4">10.9</a></td>
+    <td class="data" id="data-2-5">9.5</a></td>
+    <td class="data" id="data-2-6">Health</td>
+  </tr>
+  <tr class="row" id="row-3">
+    <td class="data" id="data-3-0"><a target="_blank" href="https://finance.yahoo.com/quote/VEEV?p=VEEV">VEEV</a></td>
+    <td class="data" id="data-3-1"><a target="_blank" href="https://www.veeva.com/">Veeva</a></td>
+    <td class="data" id="data-3-2">25,570</td>
+    <td class="data" id="data-3-3">10.9</a></td>
+    <td class="data" id="data-3-4">9.3</a></td>
+    <td class="data" id="data-3-5">15.8</a></td>
+    <td class="data" id="data-3-6">Health</td>
+  </tr>
+  <tr class="row" id="row-4">
+    <td class="data" id="data-4-0"><a target="_blank" href="https://finance.yahoo.com/quote/DNA?p=DNA">DNA</a></td>
+    <td class="data" id="data-4-1"><a target="_blank" href="https://www.ginkgobioworks.com/">Ginkgo Bioworks</a></td>
+    <td class="data" id="data-4-2">3,608</td>
+    <td class="data" id="data-4-3">4.4</a></td>
+    <td class="data" id="data-4-4">6.1</a></td>
+    <td class="data" id="data-4-5">49.1</a></td>
+    <td class="data" id="data-4-6">Health</td>
+  </tr>
+  <tr class="row" id="row-5">
+    <td class="data" id="data-5-0"><a target="_blank" href="https://finance.yahoo.com/quote/TXG?p=TXG">TXG</a></td>
+    <td class="data" id="data-5-1"><a target="_blank" href="https://www.10xgenomics.com/">10x Genomics</a></td>
+    <td class="data" id="data-5-2">4,923</td>
+    <td class="data" id="data-5-3">8.9</a></td>
+    <td class="data" id="data-5-4">6.0</a></td>
+    <td class="data" id="data-5-5">3.6</a></td>
+    <td class="data" id="data-5-6">Health</td>
+  </tr>
+  <tr class="row" id="row-6">
+    <td class="data" id="data-6-0"><a target="_blank" href="https://finance.yahoo.com/quote/EXAI?p=EXAI">EXAI</a></td>
+    <td class="data" id="data-6-1"><a target="_blank" href="https://www.exscientia.ai/">Exscientia</a></td>
+    <td class="data" id="data-6-2">866</td>
+    <td class="data" id="data-6-3">7.7</a></td>
+    <td class="data" id="data-6-4">5.7</a></td>
+    <td class="data" id="data-6-5">-0.4</a></td>
+    <td class="data" id="data-6-6">Health</td>
+  </tr>
+  <tr class="row" id="row-7">
+    <td class="data" id="data-7-0"><a target="_blank" href="https://finance.yahoo.com/quote/ILMN?p=ILMN">ILMN</a></td>
+    <td class="data" id="data-7-1"><a target="_blank" href="https://www.illumina.com/">Illumina</a></td>
+    <td class="data" id="data-7-2">31,634</td>
+    <td class="data" id="data-7-3">6.9</a></td>
+    <td class="data" id="data-7-4">5.5</a></td>
+    <td class="data" id="data-7-5">1.0</a></td>
+    <td class="data" id="data-7-6">Health</td>
+  </tr>
+  <tr class="row" id="row-8">
+    <td class="data" id="data-8-0"><a target="_blank" href="https://finance.yahoo.com/quote/CRSP?p=CRSP">CRSP</a></td>
+    <td class="data" id="data-8-1"><a target="_blank" href="https://crisprtx.com/">CRISPR Therapeutics</a></td>
+    <td class="data" id="data-8-2">3,910</td>
+    <td class="data" id="data-8-3">157.6</a></td>
+    <td class="data" id="data-8-4">5.2</a></td>
+    <td class="data" id="data-8-5">-99.3</a></td>
+    <td class="data" id="data-8-6">Health</td>
+  </tr>
+  <tr class="row" id="row-9">
+    <td class="data" id="data-9-0"><a target="_blank" href="https://finance.yahoo.com/quote/VCYT?p=VCYT">VCYT</a></td>
+    <td class="data" id="data-9-1"><a target="_blank" href="https://www.veracyte.com/">Veracyte</a></td>
+    <td class="data" id="data-9-2">1,905</td>
+    <td class="data" id="data-9-3">6.1</a></td>
+    <td class="data" id="data-9-4">4.6</a></td>
+    <td class="data" id="data-9-5">32.7</a></td>
+    <td class="data" id="data-9-6">Health</td>
+  </tr>
+  <tr class="row" id="row-10">
+    <td class="data" id="data-10-0"><a target="_blank" href="https://finance.yahoo.com/quote/TWST?p=TWST">TWST</a></td>
+    <td class="data" id="data-10-1"><a target="_blank" href="https://www.twistbioscience.com/">Twist Bioscience</a></td>
+    <td class="data" id="data-10-2">1,470</td>
+    <td class="data" id="data-10-3">4.7</a></td>
+    <td class="data" id="data-10-4">2.8</a></td>
+    <td class="data" id="data-10-5">30.4</a></td>
+    <td class="data" id="data-10-6">Health</td>
+  </tr>
+  <tr class="row" id="row-11">
+    <td class="data" id="data-11-0"><a target="_blank" href="https://finance.yahoo.com/quote/OMCL?p=OMCL">OMCL</a></td>
+    <td class="data" id="data-11-1"><a target="_blank" href="https://www.omnicell.com/">Omnicell</a></td>
+    <td class="data" id="data-11-2">2,547</td>
+    <td class="data" id="data-11-3">2.2</a></td>
+    <td class="data" id="data-11-4">2.4</a></td>
+    <td class="data" id="data-11-5">13.6</a></td>
+    <td class="data" id="data-11-6">Health</td>
+  </tr>
+
+</table>
+</body>
 </html>
-<script>const tables = document.getElementsByClassName('table')
+
+<script>
+const tables = document.getElementsByClassName('table')
 for (const table of tables) {
     const root = document.getElementById('root')
     const rows = Array.prototype.slice.call(table.children[0].getElementsByClassName('row'))
@@ -258,80 +345,4 @@ for (const table of tables) {
     }
 }
 </script>
-<style>@charset "UTF-8";
-.table {
-  border: thin solid grey;
-  border-radius: 1rem;
-  overflow: hidden;
-  border-spacing: 0;
-  font-family: "Poppins", sans-serif;
-}
-.table tr {
-  margin: 0;
-  padding: 6px;
-  border: thin solid grey;
-  border-bottom: thin solid grey;
-}
-.table tr:first-of-type {
-  color: #ffffff;
-  background-color: #3954C8;
-}
-.table tr:nth-child(odd):not(:first-of-type) {
-  color: #000000;
-  background-color: #f3f3f3;
-}
-.table tr:nth-child(even) {
-  color: #000000;
-  background-color: #ffffff;
-}
-.table tr th, .table tr td {
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-bottom: thin solid grey;
-}
-.table tr th {
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 1.2rem;
-  min-width: 2rem;
-  text-align: left;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.table tr th[data-sort=asc]::after {
-  content: " (↑)";
-}
-.table tr th[data-sort=desc]::after {
-  content: " (↓)";
-}
-.table tr td:nth-child(3) {
-  text-align: center;
-}
-.table tr td:nth-child(4) {
-  text-align: center;
-}
-.table tr td:nth-child(5) {
-  text-align: center;
-}
-.table tr td:nth-child(6) {
-  text-align: center;
-}
-.table tr td:nth-child(7) {
-  text-align: center;
-}
-.table tr td:nth-child(8) {
-  text-align: center;
-}
-.table tr {
-  padding: 6px;
-  border-bottom: thin solid grey;
-}
-.table tr:hover {
-  font-weight: bold;
-}
 
-/*# sourceMappingURL=style.css.map */
-</style>
