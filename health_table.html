@@ -301,7 +301,7 @@ for (const table of tables) {
 
             if (sort === 'desc') {
                 output = output.reverse()
-                output.filter(row => document.getElementById(`data-${row.id.split('-')[1]}-${sortId}`)?.innerText === 'None').map(row => {
+                output.filter(row => document.getElementById(`data-${row.id.split('-')[1]}-${sortId}`)?.innerText === 'NM').map(row => {
                     output.splice(output.indexOf(row), 1)
                     output.push(row)
                 })
