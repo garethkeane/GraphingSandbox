@@ -3,13 +3,19 @@
 <html>
 <head>
 <style>
+
+a:hover, a:visited, a:link, a:active
+{
+  color: #000000;
+  text-decoration: none;
+}
+
 table {
-  border: thin solid grey;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   border_spacing: 0;
   width: 1000px;
-  border: 1px solid #ddd;
+  text-decoration: none;
   }
 
 tr {
@@ -20,8 +26,6 @@ tr {
 th {
   padding: 10px;
   text-align: left;
-  color: #ffffff;
-  background-color: #18A1CD;
   position: sticky;
   cursor: pointer;
   }
@@ -55,7 +59,7 @@ th:nth-child(7) {
   }
 
 tr:nth-child(even) {
-  background-color: #f3f3f3;
+  text-decoraiton: none;
   }
 
 td:nth-child(3) {
@@ -200,13 +204,6 @@ th[data-sort=desc]::after {
 
 </table>
 
-<p style="font-size:10px;font-family:avenir-light,sans-serif"><I>(Table can be sorted by column)<BR>
-<B>Footnotes</B><BR><B>1.</B> Market Cap is defined as Number of Shares Outstanding x Price Per Share at time this snapshot of the index is generated<br>
-<B>2.</B> Enterprise Value is defined as Market Capitalization + Current Portion of Long Term Debt + Non-Current Portion of Long Term Debt + Book Value of Preferred Stock + Book Value of Minority Interest - Cash and Short Term Investments<br>
-<B>3.</B> Revenue Growth Rate defined as % change in revenue from current fiscal year to analyst average forecast for next fiscal year<br>
-<B>No Meaning (NM) Thresholds:</B> Any undefined/not a number values are shown as not meaningful, along with the following thresholds <br>
-<B>- EV/TTM and EV/NTM Multiples</B> Any value > 200 is removed and shown as not meaningful<br>
-<B>- Revenue Growth Rate</B> Any value > 1000% is removed and shown as not meaningful<I></style></p>
 </body>
 </html>
 

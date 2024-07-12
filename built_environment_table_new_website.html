@@ -3,13 +3,19 @@
 <html>
 <head>
 <style>
+
+a:hover, a:visited, a:link, a:active
+{
+  color: #000000;
+  text-decoration: none;
+}
+
 table {
-  border: thin solid grey;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   border_spacing: 0;
   width: 1000px;
-  border: 1px solid #ddd;
+  text-decoration: none;
   }
 
 tr {
@@ -20,8 +26,6 @@ tr {
 th {
   padding: 10px;
   text-align: left;
-  color: #ffffff;
-  background-color: #18A1CD;
   position: sticky;
   cursor: pointer;
   }
@@ -55,7 +59,7 @@ th:nth-child(7) {
   }
 
 tr:nth-child(even) {
-  background-color: #f3f3f3;
+  text-decoraiton: none;
   }
 
 td:nth-child(3) {
@@ -108,105 +112,44 @@ th[data-sort=desc]::after {
     <th class="header" id="header-0-6">Subsector</th>
   </tr>
   <tr class="row" id="row-0">
-    <td class="data" id="data-0-0"><a target="_blank" href="https://finance.yahoo.com/quote/AUR?p=AUR">AUR</a></td>
-    <td class="data" id="data-0-1"><a target="_blank" href="https://aurora.tech/">Aurora Innovation</a></td>
-    <td class="data" id="data-0-2">4,517</td>
-    <td class="data" id="data-0-3">50.0</a></td>
-    <td class="data" id="data-0-4">NM</a></td>
-    <td class="data" id="data-0-5">-98.0</a></td>
-    <td class="data" id="data-0-6">Mobility & Logistics</td>
+    <td class="data" id="data-0-0"><a target="_blank" href="https://finance.yahoo.com/quote/ADSK?p=ADSK">ADSK</a></td>
+    <td class="data" id="data-0-1"><a target="_blank" href="https://www.autodesk.com/">Autodesk</a></td>
+    <td class="data" id="data-0-2">53,241</td>
+    <td class="data" id="data-0-3">9.5</a></td>
+    <td class="data" id="data-0-4">8.8</a></td>
+    <td class="data" id="data-0-5">10.1</a></td>
+    <td class="data" id="data-0-6">Built Environment</td>
   </tr>
   <tr class="row" id="row-1">
-    <td class="data" id="data-1-0"><a target="_blank" href="https://finance.yahoo.com/quote/HYLN?p=HYLN">HYLN</a></td>
-    <td class="data" id="data-1-1"><a target="_blank" href="https://www.hyliion.com/">Hyliion</a></td>
-    <td class="data" id="data-1-2">304</td>
-    <td class="data" id="data-1-3">92.3</a></td>
-    <td class="data" id="data-1-4">3.3</a></td>
-    <td class="data" id="data-1-5">-100.0</a></td>
-    <td class="data" id="data-1-6">Mobility & Logistics</td>
+    <td class="data" id="data-1-0"><a target="_blank" href="https://finance.yahoo.com/quote/PCOR?p=PCOR">PCOR</a></td>
+    <td class="data" id="data-1-1"><a target="_blank" href="https://www.procore.com/">Procore Technologies</a></td>
+    <td class="data" id="data-1-2">9,411</td>
+    <td class="data" id="data-1-3">8.6</a></td>
+    <td class="data" id="data-1-4">7.6</a></td>
+    <td class="data" id="data-1-5">20.2</a></td>
+    <td class="data" id="data-1-6">Built Environment</td>
   </tr>
   <tr class="row" id="row-2">
-    <td class="data" id="data-2-0"><a target="_blank" href="https://finance.yahoo.com/quote/EVGO?p=EVGO">EVGO</a></td>
-    <td class="data" id="data-2-1"><a target="_blank" href="https://www.evgo.com/">EVgo</a></td>
-    <td class="data" id="data-2-2">339</td>
-    <td class="data" id="data-2-3">3.4</a></td>
-    <td class="data" id="data-2-4">2.6</a></td>
-    <td class="data" id="data-2-5">54.3</a></td>
-    <td class="data" id="data-2-6">Mobility & Logistics</td>
+    <td class="data" id="data-2-0"><a target="_blank" href="https://finance.yahoo.com/quote/MTTR?p=MTTR">MTTR</a></td>
+    <td class="data" id="data-2-1"><a target="_blank" href="https://matterport.com/">Matterport</a></td>
+    <td class="data" id="data-2-2">1,299</td>
+    <td class="data" id="data-2-3">6.1</a></td>
+    <td class="data" id="data-2-4">5.5</a></td>
+    <td class="data" id="data-2-5">11.6</a></td>
+    <td class="data" id="data-2-6">Built Environment</td>
   </tr>
   <tr class="row" id="row-3">
-    <td class="data" id="data-3-0"><a target="_blank" href="https://finance.yahoo.com/quote/NKLA?p=NKLA">NKLA</a></td>
-    <td class="data" id="data-3-1"><a target="_blank" href="https://nikolamotor.com/">Nikola</a></td>
-    <td class="data" id="data-3-2">429</td>
-    <td class="data" id="data-3-3">10.0</a></td>
-    <td class="data" id="data-3-4">2.6</a></td>
-    <td class="data" id="data-3-5">251.3</a></td>
-    <td class="data" id="data-3-6">Mobility & Logistics</td>
-  </tr>
-  <tr class="row" id="row-4">
-    <td class="data" id="data-4-0"><a target="_blank" href="https://finance.yahoo.com/quote/DSGX?p=DSGX">DSGX</a></td>
-    <td class="data" id="data-4-1"><a target="_blank" href="https://www.descartes.com/">Descartes Systems</a></td>
-    <td class="data" id="data-4-2">8,513</td>
-    <td class="data" id="data-4-3">14.1</a></td>
-    <td class="data" id="data-4-4">12.9</a></td>
-    <td class="data" id="data-4-5">11.7</a></td>
-    <td class="data" id="data-4-6">Mobility & Logistics</td>
-  </tr>
-  <tr class="row" id="row-5">
-    <td class="data" id="data-5-0"><a target="_blank" href="https://finance.yahoo.com/quote/MBLY?p=MBLY">MBLY</a></td>
-    <td class="data" id="data-5-1"><a target="_blank" href="https://www.mobileye.com/">Mobileye</a></td>
-    <td class="data" id="data-5-2">21,571</td>
-    <td class="data" id="data-5-3">10.9</a></td>
-    <td class="data" id="data-5-4">10.8</a></td>
-    <td class="data" id="data-5-5">-9.0</a></td>
-    <td class="data" id="data-5-6">Mobility & Logistics</td>
-  </tr>
-  <tr class="row" id="row-6">
-    <td class="data" id="data-6-0"><a target="_blank" href="https://finance.yahoo.com/quote/LAZR?p=LAZR">LAZR</a></td>
-    <td class="data" id="data-6-1"><a target="_blank" href="https://www.luminartech.com/">Luminar</a></td>
-    <td class="data" id="data-6-2">748</td>
-    <td class="data" id="data-6-3">15.0</a></td>
-    <td class="data" id="data-6-4">10.7</a></td>
-    <td class="data" id="data-6-5">53.4</a></td>
-    <td class="data" id="data-6-6">Mobility & Logistics</td>
-  </tr>
-  <tr class="row" id="row-7">
-    <td class="data" id="data-7-0"><a target="_blank" href="https://finance.yahoo.com/quote/CHPT?p=CHPT">CHPT</a></td>
-    <td class="data" id="data-7-1"><a target="_blank" href="https://www.chargepoint.com/">ChargePoint</a></td>
-    <td class="data" id="data-7-2">812</td>
-    <td class="data" id="data-7-3">1.7</a></td>
-    <td class="data" id="data-7-4">1.6</a></td>
-    <td class="data" id="data-7-5">3.7</a></td>
-    <td class="data" id="data-7-6">Mobility & Logistics</td>
-  </tr>
-  <tr class="row" id="row-8">
-    <td class="data" id="data-8-0"><a target="_blank" href="https://finance.yahoo.com/quote/BLNK?p=BLNK">BLNK</a></td>
-    <td class="data" id="data-8-1"><a target="_blank" href="https://blinkcharging.com/">Blink Charging</a></td>
-    <td class="data" id="data-8-2">310</td>
-    <td class="data" id="data-8-3">1.4</a></td>
-    <td class="data" id="data-8-4">1.3</a></td>
-    <td class="data" id="data-8-5">20.9</a></td>
-    <td class="data" id="data-8-6">Mobility & Logistics</td>
-  </tr>
-  <tr class="row" id="row-9">
-    <td class="data" id="data-9-0"><a target="_blank" href="https://finance.yahoo.com/quote/FSRNQ?p=FSRNQ">FSRNQ</a></td>
-    <td class="data" id="data-9-1"><a target="_blank" href="https://www.fiskerinc.com/">Fisker</a></td>
-    <td class="data" id="data-9-2">22</td>
-    <td class="data" id="data-9-3">3.4</a></td>
-    <td class="data" id="data-9-4">0.8</a></td>
-    <td class="data" id="data-9-5">292.9</a></td>
-    <td class="data" id="data-9-6">Mobility & Logistics</td>
+    <td class="data" id="data-3-0"><a target="_blank" href="https://finance.yahoo.com/quote/ANSS?p=ANSS">ANSS</a></td>
+    <td class="data" id="data-3-1"><a target="_blank" href="https://www.ansys.com/">ANSYS</a></td>
+    <td class="data" id="data-3-2">28,896</td>
+    <td class="data" id="data-3-3">12.8</a></td>
+    <td class="data" id="data-3-4">11.7</a></td>
+    <td class="data" id="data-3-5">7.4</a></td>
+    <td class="data" id="data-3-6">Built Environment</td>
   </tr>
 
 </table>
 
-<p style="font-size:10px;font-family:avenir-light,sans-serif"><I>(Table can be sorted by column)<BR>
-<B>Footnotes</B><BR><B>1.</B> Market Cap is defined as Number of Shares Outstanding x Price Per Share at time this snapshot of the index is generated<br>
-<B>2.</B> Enterprise Value is defined as Market Capitalization + Current Portion of Long Term Debt + Non-Current Portion of Long Term Debt + Book Value of Preferred Stock + Book Value of Minority Interest - Cash and Short Term Investments<br>
-<B>3.</B> Revenue Growth Rate defined as % change in revenue from current fiscal year to analyst average forecast for next fiscal year<br>
-<B>No Meaning (NM) Thresholds:</B> Any undefined/not a number values are shown as not meaningful, along with the following thresholds <br>
-<B>- EV/TTM and EV/NTM Multiples</B> Any value > 200 is removed and shown as not meaningful<br>
-<B>- Revenue Growth Rate</B> Any value > 1000% is removed and shown as not meaningful<I></style></p>
 </body>
 </html>
 
